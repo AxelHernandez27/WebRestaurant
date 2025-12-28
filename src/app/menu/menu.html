@@ -1,0 +1,89 @@
+<!-- Loader -->
+<div id="loader">
+  <div class="burger">
+      <div class="bun-top"></div>
+      <div class="lettuce"></div>
+      <div class="tomato"></div>
+      <div class="cheese"></div>
+      <div class="patty"></div>
+      <div class="bun-bottom"></div>
+  </div>
+  <p>Cargando...</p>
+</div>
+
+<div class="contenedor">
+  <main class="comida">
+    <h2 class="comida--titulo">✨ Disfruta nuestro Menú ✨</h2>
+
+    <div class="platos">
+
+      <article class="plato">
+        <img src="assets/Imagenes/hamburguesa.png" alt="Hamburguesa">
+        <h1>Combo hamburguesitas</h1>
+        <p>C4 hamburguesitas acompañados con papas y refresco</p>
+        <div class="plato--info">
+          <p>$100</p>
+          <button type="button" (click)="addToCart(productos[0])">+</button>
+        </div>
+      </article>
+
+      <article class="plato">
+        <img src="assets/Imagenes/hamburguesa-grande.png" alt="Hamburguesa XL">
+        <h1>hamburguesita</h1>
+        <p>Hamburguesita con verduras frescas y con queso.</p>
+        <div class="plato--info">
+          <p>$20</p>
+          <button type="button" (click)="addToCart(productos[1])">+</button>
+        </div>
+      </article>
+
+      <article class="plato">
+        <img src="assets/Imagenes/papas-fritas.png" alt="Papas fritas">
+        <h1>Papas Fritas Grandes</h1>
+        <p>Clásicas papas doradas, servidas bien crujientes.</p>
+        <div class="plato--info">
+          <p>$25</p>
+          <button type="button" (click)="addToCart(productos[2])">+</button>
+        </div>
+      </article>
+
+      <article class="plato">
+        <img src="assets/Imagenes/hotdog.png" alt="Hot Dog">
+        <h1>Hot Dog Especial</h1>
+        <p>Salchicha premium con toppings irresistibles.</p>
+        <div class="plato--info">
+          <p>$20</p>
+          <button type="button" (click)="addToCart(productos[3])">+</button>
+        </div>
+      </article>
+
+    </div>
+
+    <h2 class="comida--titulo">🍨 Postres Irresistibles 🍰</h2>
+
+    <div class="platos">
+
+      <article class="plato">
+        <img src="assets/Imagenes/pastel.png" alt="Pastel">
+        <h1>Pastel de Chocolate</h1>
+        <p>Rebanada de pastel de chocolate</p>
+        <div class="plato--info">
+          <p>$20</p>
+          <button type="button" (click)="addToCart(productos[4])">+</button>  
+        </div>
+      </article>
+
+      <article class="plato">
+        <img src="assets/Imagenes/cheesecake.png" alt="Cheesecake">
+        <h1>Cheesecake de Fresa</h1>
+        <p>Con base de galleta y salsa de fresa natural.</p>
+        <div class="plato--info">
+          <p>$15</p>
+          <button type="button" (click)="addToCart(productos[5])">+</button>
+        </div>
+      </article>
+
+    </div>
+  </main>
+
+</div>

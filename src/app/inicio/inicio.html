@@ -1,0 +1,81 @@
+<!-- Loader -->
+<div id="loader">
+  <div class="burger">
+      <div class="bun-top"></div>
+      <div class="lettuce"></div>
+      <div class="tomato"></div>
+      <div class="cheese"></div>
+      <div class="patty"></div>
+      <div class="bun-bottom"></div>
+  </div>
+  <p>Cargando...</p>
+</div>
+
+<div class="contenedor">
+
+  <aside class="presentacion">
+      <div class="informacion">
+          <h1>¡El tamaño no importa, cuando el sabor manda!😋</h1>
+          <div>
+              <h2><p>¡Ordena ahora y disfruta el verdadero sabor!</p></h2>
+          </div>
+          <div class="informacion--boton">
+              <a href="/menu">
+                  <button type="button">Explorar menú</button>
+              </a>
+          </div>
+      </div>
+
+      <div class="presentacion--imagen">
+          <img src="/images/logo.png" alt="Imagen presentacion">
+      </div>
+  </aside>
+
+  <main class="comida">
+      <h2 class="comida--titulo">Platos populares</h2>
+
+      <div class="platos">
+
+          <article class="plato">
+        <img src="assets/Imagenes/hamburguesa.png" alt="Hamburguesa">
+        <h1>Combo hamburguesitas</h1>
+        <p>C4 hamburguesitas acompañados con papas y refresco</p>
+        <div class="plato--info">
+          <p>$100</p>
+          <button type="button" (click)="addToCart(productos[0])">+</button>
+        </div>
+      </article>
+
+         <article class="plato">
+        <img src="assets/Imagenes/hamburguesa-grande.png" alt="Hamburguesa XL">
+        <h1>hamburguesita</h1>
+        <p>Hamburguesita con verduras frescas y con queso.</p>
+        <div class="plato--info">
+          <p>$20</p>
+          <button type="button" (click)="addToCart(productos[1])">+</button>
+        </div>
+      </article>
+
+           <article class="plato">
+        <img src="assets/Imagenes/papas-fritas.png" alt="Papas fritas">
+        <h1>Papas Fritas Grandes</h1>
+        <p>Clásicas papas doradas, servidas bien crujientes.</p>
+        <div class="plato--info">
+          <p>$25</p>
+          <button type="button" (click)="addToCart(productos[2])">+</button>
+        </div>
+      </article>
+
+           <article class="plato">
+        <img src="assets/Imagenes/pastel.png" alt="Pastel">
+        <h1>Pastel de Chocolate</h1>
+        <p>Rebanada de pastel de chocolate</p>
+        <div class="plato--info">
+          <p>$20</p>
+          <button type="button" (click)="addToCart(productos[4])">+</button>  
+        </div>
+      </article>
+      </div>
+  </main>
+
+</div>

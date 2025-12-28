@@ -1,0 +1,117 @@
+.carrito {
+  max-width: 600px;
+  margin: auto;
+  padding: 1rem;
+}
+
+/* ITEM DEL CARRITO */
+.item {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  border-bottom: 1px solid #ddd;
+  padding: 0.8rem 0;
+}
+
+/* INFO PRODUCTO */
+.info {
+  flex: 1;
+}
+
+.info h3 {
+  margin: 0;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.precio-unitario {
+  margin-top: 2px;
+  font-size: 14px;
+  color: #666;
+}
+
+/* BOTONES + / - */
+.acciones {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.acciones button {
+  width: 30px;
+  height: 30px;
+}
+
+/* SUBTOTAL */
+.subtotal {
+  min-width: 80px;
+  text-align: right;
+  font-weight: bold;
+}
+
+/* ELIMINAR */
+.eliminar {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.eliminar i {
+  color: #dc3545;
+  font-size: 18px;
+}
+
+.eliminar i:hover {
+  color: #a71d2a;
+}
+
+/* TOTAL */
+.total {
+  margin-top: 1rem;
+  text-align: right;
+}
+
+.comprar {
+  background: #25d366;
+  color: white;
+  border: none;
+  padding: 0.9rem 1.2rem;
+  cursor: pointer;
+
+  border-radius: 10px;
+  font-size: 16px;
+
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.comprar i {
+  font-size: 20px;           /* 📱 icono más grande */
+}
+
+.vacio {
+  margin-top: 1.5rem;     /* separa del título */
+  text-align: center;
+}
+
+.mensaje-vacio {
+  font-weight: bold;      /* negritas */
+  margin-bottom: 1rem;    /* espacio con el botón */
+}
+
+.btn-menu {
+  display: inline-block;
+  background: #ffa500;
+  color: white;
+  text-decoration: none;
+
+  padding: 0.6rem 1.2rem;
+  border-radius: 10px;
+
+  font-weight: 600;
+}
+
+.btn-menu:hover {
+  background: #e69500;
+}

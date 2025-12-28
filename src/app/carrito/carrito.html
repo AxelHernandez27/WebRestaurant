@@ -1,0 +1,44 @@
+<section class="carrito">
+  <h2>🛒 Tu pedido</h2>
+
+<div *ngIf="cart.getCart().length === 0" class="vacio">
+  <p class="mensaje-vacio">Tu carrito está vacío</p>
+
+  <a href="/menu" class="btn-menu">
+    Ir al menú
+  </a>
+</div>
+
+  <div *ngFor="let item of cart.getCart()" class="item">
+
+    <div class="info">
+      <h3>{{ item.name }}</h3>
+      <p class="precio-unitario">$ {{ item.price }}</p>
+    </div>
+
+    <!-- ACCIONES -->
+    <div class="acciones">
+      <button (click)="cart.decreaseQuantity(item.id)">−</button>
+      <span>{{ item.quantity }}</span>
+      <button (click)="cart.increaseQuantity(item.id)">+</button>
+    </div>
+
+    <!-- SUBTOTAL -->
+    <p class="subtotal">
+      $ {{ item.price * item.quantity }}
+    </p>
+
+    <!-- ELIMINAR -->
+    <button class="eliminar" (click)="cart.removeProduct(item.id)">
+      <i class="fa-solid fa-trash"></i>
+    </button>
+  </div>
+
+  <div *ngIf="cart.getCart().length > 0" class="total">
+    <h3>Total: $ {{ cart.getTotal() }}</h3>
+    <br>
+    <button class="comprar" (click)="sendWhatsApp()">
+      Hacer pedido por WhatsApp <i class="fab fa-whatsapp"></i>
+    </button>
+  </div>
+</section>
